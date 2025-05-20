@@ -6,5 +6,5 @@ while True:
     demoji.findall(text)
     ch=input("Do you wnat to do more(y/n):")
     if ch in "Nn":
-        print("thank you for using :)")
+        print("thank you for using :) ")
         break
