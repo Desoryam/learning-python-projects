@@ -23,3 +23,11 @@ print(f"Formatted time: {formatted_time}")
 # Parse a time string
 time_tuple = time.strptime("2025-05-04 15:30:00", "%Y-%m-%d %H:%M:%S")
 print(f"Parsed time tuple: {time_tuple}")
+
+'''
+# for water reminder:-
+# interval=int(input("Enter the interval for water (in hours):"))
+# time.sleep(interval*3600)
+# 
+# t = time.strftime('%H:%M:%S') 
+'''
