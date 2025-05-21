@@ -26,11 +26,11 @@ while True:
         g=g-1
     print(g_w)
     if g==0:
-        print("YOU LOST")
+        print("\nYOU LOST")
         print("\nTHANK YOU FOR PLAYING :)")
         break
     fw="".join(g_w)
     if "_" not in fw:
-        print("YOU WON")
+        print("\nYOU WON")
         print("\nTHANK YOU FOR PLAYING :)")
         break
