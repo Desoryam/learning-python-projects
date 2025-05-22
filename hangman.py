@@ -1,5 +1,6 @@
 import random as r
-words=["Pizza", "Spaghetti", "Tiger", "Giraffe","Octopus","Apple","Beach","Clock","Dragon","Earth","Fruit","Guitar","Happy","Juice","Lemon"]
+words=["Pizza", "Spaghetti", "Tiger", "Giraffe","Octopus","Apple","Beach"
+       ,"Clock","Dragon","Earth","Fruit","Guitar","Happy","Juice","Lemon"]
 
 r_w=list((r.choice(words)).upper())
 g=7

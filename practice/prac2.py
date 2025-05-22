@@ -1,36 +1,15 @@
-import random as r
-words=["Octopus"]
+import multiprocessing
 
-r_w=list((r.choice(words)).upper())
-g=7
-print("WELCOME TO HANGMAN".center(150))
-print("YOUR WORD IS :")
-g_w=[]
-for i in r_w:
-    g_w.append("_")
+def calculate_square(number):
+    print(f"Square of {number}: {number * number}")
 
-print(g_w)
-print()
-while True:
-    print(f"GUESSES LEFT : {g}")
-    p=input("Pick a letter:").upper()
-    if p in "".join(r_w):
-        for n,w in enumerate(r_w):
-            if p==w:
-                g_w[n]=p
-            elif p!=w and  g_w[n]!="_":
-                pass
-            else:
-                pass
-    else:
-        g=g-1
-    print(g_w)
-    if g==0:
-        print("\nYOU LOST")
-        print("\nTHANK YOU FOR PLAYING :)")
-        break
-    fw="".join(g_w)
-    if "_" not in fw:
-        print("\nYOU WON")
-        print("\nTHANK YOU FOR PLAYING :)")
-        break
+numbers = [1, 2, 3, 4,23,25,13,877]
+processes = []
+if __name__=="__main__":
+    for num in numbers:
+        process = multiprocessing.Process(target=calculate_square, args=(num,))
+        process.start()
+        processes.append(process)
+
+    for process in processes:
+        process.join()  # Wait for all processes to finish
