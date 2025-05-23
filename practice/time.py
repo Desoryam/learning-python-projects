@@ -26,8 +26,10 @@ print(f"Parsed time tuple: {time_tuple}")
 
 '''
 # for water reminder:-
-# interval=int(input("Enter the interval for water (in hours):"))
-# time.sleep(interval*3600)
+# interval=int(input("enter the interval for water (in hours):"))
+# time.slep(interval*3600)
 # 
 # t = time.strftime('%H:%M:%S') 
 '''
+
+
