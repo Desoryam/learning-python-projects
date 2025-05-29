@@ -12,5 +12,7 @@ qr.make()
 
 
 img = qr.make_image(fill_color="black", back_color="white")
+
 img.save("output/MYQR1.png")
+
 print("QR code generated successfully!")
